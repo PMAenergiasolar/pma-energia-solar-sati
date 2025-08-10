@@ -12,7 +12,7 @@ import solarPanelsImage from './assets/XNoqB2kW6ll8.png';
 import houseImage from './assets/bb9VwN62tNeb.jpg';
 
 function App() {
-  const whatsappNumber = '5548996765239';
+  const whatsappNumber = '5548996765932';
   const whatsappMessage = 'Olá! Gostaria de saber mais sobre energia solar.';
   
   const openWhatsApp = () => {
@@ -263,7 +263,7 @@ function App() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5" />
-                  <span>(48) 99676-5239</span>
+                  <span>(48) 99676-5932</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5" />
