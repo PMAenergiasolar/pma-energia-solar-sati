@@ -61,6 +61,32 @@ function App() {
         </div>
       </section>
 
+      {/* Como Funciona a Energia Solar e Seus Benefícios */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h3 className="text-3xl font-bold text-center mb-12">Como Funciona a Energia Solar e Seus Benefícios</h3>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h4 className="text-xl font-semibold mb-4">O Funcionamento da Energia Solar</h4>
+              <p className="mb-4">
+                A energia solar fotovoltaica é gerada a partir da luz do sol. Painéis solares, compostos por células fotovoltaicas, captam a luz solar e a convertem em energia elétrica (corrente contínua). Um inversor converte essa corrente contínua em corrente alternada, que é a energia utilizada em residências e empresas. O excesso de energia gerado pode ser injetado na rede elétrica da concessionária, gerando créditos que podem ser utilizados em momentos de menor produção ou em outras unidades consumidoras.
+              </p>
+              <h4 className="text-xl font-semibold mb-4">Economia na Conta de Luz</h4>
+              <p className="mb-4">
+                A principal vantagem da energia solar é a significativa redução na conta de luz. Ao gerar sua própria energia, você diminui a dependência da concessionária e se protege dos aumentos tarifários. Em muitos casos, a economia pode chegar a 95% do valor da fatura, tornando o investimento em energia solar altamente rentável a médio e longo prazo.
+              </p>
+              <h4 className="text-xl font-semibold mb-4">Benefícios para o Planeta</h4>
+              <p className="mb-4">
+                A energia solar é uma fonte de energia limpa e renovável. Sua utilização não emite gases poluentes ou resíduos tóxicos, contribuindo diretamente para a redução do efeito estufa e o combate às mudanças climáticas. Ao optar pela energia solar, você contribui para um futuro mais sustentável, preservando os recursos naturais e melhorando a qualidade do ar.
+              </p>
+            </div>
+            <div className="relative">
+              <img src={solarPanelsImage} alt="Funcionamento da Energia Solar" className="rounded-lg shadow-lg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Economia Section */}
       <section className="py-16 bg-accent/10">
         <div className="container mx-auto px-4 text-center">
@@ -91,6 +117,45 @@ function App() {
               <CardContent>
                 <p className="text-2xl font-bold text-primary">Até 85%</p>
                 <p className="text-muted-foreground">de economia energética</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Tipos de Sistemas Solares */}
+      <section className="py-16 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <h3 className="text-3xl font-bold text-center mb-12">Tipos de Sistemas Solares</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-xl">Sistema On-Grid (Conectado à Rede)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Sistemas on-grid são os mais comuns e funcionam conectados à rede elétrica da concessionária. Toda a energia gerada pelos painéis solares é primeiramente consumida no local. O excedente é injetado na rede e gera créditos de energia, que podem ser usados em momentos de baixa produção solar ou à noite. Não possuem baterias para armazenamento, dependendo da rede para suprir a demanda quando a geração solar é insuficiente.
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-xl">Sistema Off-Grid (Autônomo)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Sistemas off-grid são totalmente independentes da rede elétrica. Eles são ideais para locais remotos onde o acesso à rede é inviável ou muito caro. A energia gerada pelos painéis é armazenada em baterias para uso posterior, garantindo o fornecimento de energia mesmo sem sol. Exigem um dimensionamento preciso e um banco de baterias robusto para assegurar a autonomia.
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-xl">Sistema Híbrido</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Sistemas híbridos combinam as vantagens dos sistemas on-grid e off-grid. Eles são conectados à rede elétrica, mas também possuem um banco de baterias para armazenamento de energia. Isso oferece maior segurança energética, permitindo que o imóvel continue sendo suprido em caso de quedas de energia da rede, além de otimizar o uso da energia solar gerada.
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -216,6 +281,28 @@ function App() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Veículos Híbridos (PHEV e HEV) */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h3 className="text-3xl font-bold text-center mb-12">Veículos Híbridos: Uma Ponte para a Mobilidade Sustentável</h3>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h4 className="text-xl font-semibold mb-4">HEV (Hybrid Electric Vehicle) - Híbridos Convencionais</h4>
+              <p className="mb-4">
+                Os Veículos Elétricos Híbridos (HEV) combinam um motor a combustão interna com um motor elétrico e uma bateria. O motor elétrico auxilia o motor a combustão, especialmente em baixas velocidades e acelerações, resultando em melhor eficiência de combustível e menor emissão de poluentes. A bateria é recarregada pelo motor a combustão e pela frenagem regenerativa, sem a necessidade de ser plugada a uma fonte externa.
+              </p>
+              <h4 className="text-xl font-semibold mb-4">PHEV (Plug-in Hybrid Electric Vehicle) - Híbridos Plug-in</h4>
+              <p className="mb-4">
+                Os Veículos Elétricos Híbridos Plug-in (PHEV) são uma evolução dos HEVs. Eles também possuem um motor a combustão e um motor elétrico, mas com uma bateria maior que pode ser recarregada externamente, conectando o veículo a uma tomada ou estação de carregamento. Isso permite que os PHEVs operem em modo totalmente elétrico por distâncias significativas, reduzindo ainda mais o consumo de combustível e as emissões, sendo uma excelente opção para quem busca uma transição para a mobilidade elétrica.
+              </p>
+            </div>
+            <div className="relative">
+              <img src={houseImage} alt="Veículos Híbridos" className="rounded-lg shadow-lg" />
+            </div>
           </div>
         </div>
       </section>
