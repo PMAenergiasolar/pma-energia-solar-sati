@@ -6,8 +6,9 @@ import { Badge } from './components/ui/badge';
 import { Sun, Zap, Shield, TrendingUp, Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 
 // Importando as imagens
-import heroImage from './assets/BjCGHL22HaVn.jpeg';
-import installationImage from './assets/abbFkTeBQtZk.jpg';
+import heroImage from './assets/e4Uz7O7avkT1.jpg';
+import installationImage from './assets/FKX18ONyTMyQ.webp';
+import industrialProjectImage from './assets/oHH1sLOeb1lT.webp';
 import solarPanelsImage from './assets/XNoqB2kW6ll8.png';
 import houseImage from './assets/bb9VwN62tNeb.jpg';
 
@@ -228,7 +229,7 @@ function App() {
               </div>
             </div>
             <div className="relative">
-              <img src={installationImage} alt="Instalação de Energia Solar" className="rounded-lg shadow-lg" />
+              <img src={FKX18ONyTMyQ} alt="Instalação de Energia Solar" className="rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
@@ -269,7 +270,7 @@ function App() {
             </Card>
             <Card>
               <CardHeader>
-                <img src={installationImage} alt="Projeto Industrial" className="w-full h-48 object-cover rounded-t-lg" />
+                <img src={industrialProjectImage} alt="Projeto Industrial" className="w-full h-48 object-cover rounded-t-lg" />
                 <CardTitle>Projeto Industrial</CardTitle>
                 <CardDescription>Sistema de grande porte</CardDescription>
               </CardHeader>
