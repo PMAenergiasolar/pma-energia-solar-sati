@@ -11,6 +11,10 @@ import installationImage from './assets/FKX18ONyTMyQ.webp';
 import industrialProjectImage from './assets/oHH1sLOeb1lT.webp';
 import solarPanelsImage from './assets/XNoqB2kW6ll8.png';
 import houseImage from './assets/bb9VwN62tNeb.jpg';
+import solarDiagramImage from './assets/gVjdUj22787E.jpg';
+import onOffGridDiagramImage from './assets/h3V7eOlmWez5.jpg';
+import hybridVehicleDiagramImage from './assets/Ko2Wt1LWzPgu.jpg';
+import phevHevDiagramImage from './assets/FEeaBb5unlEC.jpg';
 
 function App() {
   const whatsappNumber = '5548996765932';
@@ -82,7 +86,7 @@ function App() {
               </p>
             </div>
             <div className="relative">
-              <img src={solarPanelsImage} alt="Funcionamento da Energia Solar" className="rounded-lg shadow-lg" />
+              <img src={solarDiagramImage} alt="Funcionamento da Energia Solar" className="rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
@@ -135,7 +139,7 @@ function App() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Sistemas on-grid são os mais comuns e funcionam conectados à rede elétrica da concessionária. Toda a energia gerada pelos painéis solares é primeiramente consumida no local. O excedente é injetado na rede e gera créditos de energia, que podem ser usados em momentos de baixa produção solar ou à noite. Não possuem baterias para armazenamento, dependendo da rede para suprir a demanda quando a geração solar é insuficiente.
+                  Sistemas on-grid são os mais comuns e funcionam conectados à rede elétrica da concessionária. Toda a energia gerada pelos painéis solares é primeiramente consumida no local. O excedente é injetado na rede e gera créditos de energia, que podem ser usados em momentos de menor produção ou à noite. Não possuem baterias para armazenamento, dependendo da rede para suprir a demanda quando a geração solar é insuficiente.
                 </p>
               </CardContent>
             </Card>
@@ -159,6 +163,9 @@ function App() {
                 </p>
               </CardContent>
             </Card>
+          </div>
+          <div className="mt-12 text-center">
+            <img src={onOffGridDiagramImage} alt="Diagrama de Sistemas On-Grid, Off-Grid e Híbrido" className="rounded-lg shadow-lg mx-auto max-w-full h-auto" />
           </div>
         </div>
       </section>
@@ -302,7 +309,7 @@ function App() {
               </p>
             </div>
             <div className="relative">
-              <img src={houseImage} alt="Veículos Híbridos" className="rounded-lg shadow-lg" />
+              <img src={phevHevDiagramImage} alt="Veículos Híbridos" className="rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
